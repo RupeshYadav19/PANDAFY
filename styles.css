@@ -1,0 +1,292 @@
+* {  
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set the background color and remove default padding and margin for the entire HTML document */
+html {
+    background-color: #560505;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 25px 50px; 
+    text-align: center;
+    display: flex;
+}
+.logo a {
+    color: #fff;
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px;
+    font-weight: light;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    align-items: center; /*vertically center the logo image and text */
+    display: flex;
+    gap: 10px; /* Add some space between the logo image and text */ 
+}
+.logo img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    object-fit: contain; /* Ensure the image fits within the specified dimensions */
+}
+.main-nav ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display the list items in a row */
+    gap: 35px; /* Add space between the navigation links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.main-nav a {
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from the links */
+    font-size: 16px; /* Set the font size */
+    font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+    letter-spacing: 1px; /* Add some spacing between letters */
+    padding: 12px 25px; /* Add padding around the links */
+    border-radius: 600px; /* Add rounded corners to the links */
+    transition: background 0.3s ease; /* Smooth transition for the background color */
+    
+}
+.main-nav a.active {
+    background: rgba(150, 40, 50, 0.45);
+    border: 1px solid rgba(255, 80, 90, 0.5);
+    backdrop-filter: blur(10px) ;
+}
+    
+.main-nav a:hover {
+    background: rgba(255, 90, 100, 0.55); /* Set a semi-transparent background on hover */
+    color: #fff; /* Keep the text color white on hover */
+    transition: background 0.3s ease; /* Smooth transition for the background color */
+    border: 1px solid rgba(255, 80, 90, 0.5); /* Add a border on hover */
+    box-shadow: 0 0 15px rgba(255, 50, 60, 0.2);/* Add a subtle shadow effect on hover */
+    
+}
+
+.menu-button {
+    background: rgba(120,40, 50, 0.55); /* Set a semi-transparent background */
+    border: 1px solid rgba(255,90, 100, 0.5); /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #fff; /* Set the text color to white */
+    font-size: 16px; /* Set the font size for the menu button */
+    padding: 0px 18px; /* Add padding around the button */
+    border-radius: 600px; /* Add rounded corners to the button */
+    display: flex; /* Hide the menu button by default */
+    letter-spacing: 1px; /* Add some spacing between letters */
+    align-items: center; /* Vertically center the button content */
+    backdrop-filter: blur(2px); /* Apply a blur effect to the background */
+    overflow: hidden; /* Hide any overflowing content */
+   gap: 0px; /* Add some space between the button text and icon */ 
+}
+.menu-button i {
+    border-left: 1px solid rgba(255,255, 255, 0.15); /* Add a left border to the icon */
+    padding: 12px 18px; /* Add padding around the icon */
+    margin-left: 30px; /* Add some space between the button text and icon */
+    
+}
+.menu-button:hover {
+    background: rgba(255, 90, 100, 0.55); /* Set a semi-transparent background on hover */
+    color: #fff; /* Keep the text color white on hover */
+    transition: background 0.3s ease; /* Smooth transition for the background color */
+    border: 1px solid rgba(255, 80, 90, 0.5); /* Add a border on hover */
+    box-shadow: 0 0 15px rgba(255, 50, 60, 0.2);/* Add a subtle shadow effect on hover */
+    backdrop-filter: blur(2px); /* Apply a blur effect to the background on hover */
+}
+.hero {
+    min-height: 70vh;
+    position: relative; /* Ensure the hero section takes up at least 90% of the viewport height */
+}
+
+.hero-content {
+    position: absolute; /* Position the hero content absolutely within the hero section */
+    left: 6%; /* Position the hero content 8% from the left of the hero section */
+    top: 40%; /* Position the hero content 40% from the top of the hero section */
+    transform: translateY(-50%);
+    padding-top: 70px; /* Add padding around the hero content */
+}
+.hero-tagline {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 3px; /* Add spacing between letters */
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+.hero-content h1 {
+    color: white;
+    font-size: 110px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    font-family: 'Audiowide', cursive;
+    background: linear-gradient(
+        to bottom,
+        rgb(232, 213, 213) 55%,
+        rgba(205, 37, 37, 0) 100%
+    );
+/*-webkit- tells browsers that use the WebKit/Blink browser engine to apply this property.*/
+    -webkit-background-clip: text; /* Use background-clip to apply the gradient to the text */
+    background-clip: text; /* Use background-clip to apply the gradient to the text */
+    color: transparent;  /* Make the text color transparent to show the gradient */
+}
+
+.hero-content h2 {
+    color: rgba(241, 223, 223, 0.752);
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin-bottom: 29px;
+    font-family: 'Orbitron', sans-seri;
+}
+
+.hero-content p {
+    color: rgba(241, 223, 223, 0.752);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 29px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+.hero-buttons {
+    display: flex; /* Display the buttons in a row */
+    letter-spacing: 1px; /* Add some spacing between letters */
+}
+.get-started {
+    background: rgba(120, 40, 50, 0.55); /* Set a semi-transparent background */
+    border: 1px solid rgba(255, 90, 100, 0.5); /* Add a border */
+    color: #fff; /* Set the text color to white */
+    font-size: 16px; /* Set the font size */
+    padding: 12px 25px; /* Add padding around the button */
+    border-radius: 600px; /* Add rounded corners to the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background 0.3s ease; /* Smooth transition for the background color */
+}
+.get-started:hover {
+    background: rgba(255, 90, 100, 0.55); /* Set a semi-transparent background on hover */
+    color: #fff; /* Keep the text color white on hover */
+    transition: background 0.3s ease; /* Smooth transition for the background color */
+    border: 1px solid rgba(255, 80, 90, 0.5); /* Add a border on hover */
+    box-shadow: 0 0 15px rgba(255, 50, 60, 0.2);/* Add a subtle shadow effect on hover */
+}
+.watch-trailer {
+    border: 1px solid rgba(255, 90, 100, 0.5); /* Add a border */
+    color: #fff; /* Set the text color to white */
+    font-size: 16px; /* Set the font size */
+    padding: 12px 25px; /* Add padding around the button */
+    border-radius: 600px; /* Add rounded corners to the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background 0.3s ease; /* Smooth transition for the background color */
+    margin-left: 20px; /* Add some space between the two buttons */
+    backdrop-filter: blur(2px); /* Apply a blur effect to the background */
+
+}
+.watch-trailer:hover {
+    background: rgba(255, 90, 100, 0.55); /* Set a semi-transparent background on hover */
+    color: #fff; /* Keep the text color white on hover */
+    transition: background 0.3s ease; /* Smooth transition for the background color */
+    border: 1px solid rgba(255, 80, 90, 0.5); /* Add a border on hover */
+    box-shadow: 0 0 15px rgba(255, 50, 60, 0.2);/* Add a subtle shadow effect on hover */
+}
+
+.site-footer {
+    color: #fff; 
+    padding: 20px 50px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 80, 80, 0.2);
+    border-bottom: 1px solid rgba(255, 80, 80, 0.15);
+    backdrop-filter: blur(6px);
+}
+.footer-explore {
+    display: flex;
+    align-items: center; 
+    
+    gap: 30px;
+}
+.footer-play {
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgba(255, 70, 70, 0.7);
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-decoration: none;
+    background: rgba(100, 20, 30, 0.25);
+}
+.footer-explore-text {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 1.6;
+}
+.footer-feature {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 0 35px;
+    border-left: 1px solid rgba(255, 80, 80, 0.2);
+}
+.feature-number {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 70, 70, 0.6);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 16px;
+}
+.feature-content h3 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.feature-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    padding-left: 35px;
+    border-left: 1px solid rgba(255, 80, 80, 0.2);
+}
+
+.footer-socials a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}

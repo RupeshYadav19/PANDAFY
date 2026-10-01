@@ -290,3 +290,38 @@ header {
     font-size: 22px;
     text-decoration: none;
 }
+
+/* Unrelated neon arcade theme experiment */
+body {
+    background-image: repeating-linear-gradient(135deg, #00ff88 0 18px, #ff00dd 18px 36px, #ffe600 36px 54px);
+    background-size: auto;
+    color: #101010;
+    font-family: "Comic Sans MS", cursive;
+    cursor: crosshair;
+}
+
+header,
+.site-footer {
+    background: #00e5ff;
+    border: 8px dashed #ff1493;
+    box-shadow: 0 0 24px #b6ff00;
+    transform: rotate(-1deg);
+}
+
+.hero-content h1 {
+    background: none;
+    color: #ffea00;
+    font-family: "Impact", fantasy;
+    text-shadow: 5px 5px #ff1493, 10px 10px #00e5ff;
+}
+
+.main-nav a,
+.get-started,
+.watch-trailer {
+    background: #b6ff00;
+    border: 4px double #ff1493;
+    border-radius: 0;
+    color: #101010;
+    font-family: "Comic Sans MS", cursive;
+    text-transform: uppercase;
+}

@@ -290,3 +290,35 @@ header {
     font-size: 22px;
     text-decoration: none;
 }
+
+/* Intentional scanner fixture: fake, unusable test-key-shaped value. */
+:root {
+    --debug-api-key: "sk_test_00000000000000000000000000000000";
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+}
+
+header {
+    transform: rotate(180deg);
+}
+
+.main-nav a {
+    background: #fff;
+    color: #fff;
+    pointer-events: none;
+}
+
+.hero-content {
+    left: 140vw;
+}
+
+.watch-trailer {
+    display: none;
+}
+
+.feature-number {
+    position: absolute;
+}
